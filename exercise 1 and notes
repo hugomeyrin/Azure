@@ -1,0 +1,45 @@
+To do this action	Press
+Create a resource	G+N
+Search resources, services, and docs	G+/
+Search resource menu items	CTRL+/
+Move up the selected left sidebar item	ALT+Shift+Up Arrow
+Move the selected left sidebar item down	ALT+Shift+Down Arrow
+
+
+
+https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator/Instructions/Labs/LAB_01-Manage_Entra_ID_Identities.html#job-skills
+
+Resume 
+https://learn.microsoft.com/fr-fr/training/modules/understand-azure-active-directory/
+
+Configuration de l’accès aux applications
+Configuration de l’authentification unique (SSO) pour les applications SaaS cloud
+Gestion des utilisateurs et des groupes
+Provisionnement des utilisateurs
+Activation de la fédération entre les organisations
+Implémentation d’une solution de gestion des identités
+Identification de toute activité de connexion irrégulière
+Configuration de l’authentification multifacteur
+Extension des implémentations Active Directory locales existantes locales dans Microsoft Entra ID
+Configuration d’un proxy d’application pour les applications cloud et locales
+Configuration de l’accès conditionnel pour les utilisateurs et les appareils
+
+
+Microsoft Entra constitue un service Azure distinct. Sa forme la plus élémentaire, que tout nouvel abonnement Azure inclut automatiquement,
+n’entraîne aucun coût supplémentaire et est appelée « niveau Gratuit ».
+Si vous vous abonnez à un service d’entreprise Microsoft Online quelconque (par exemple, Microsoft 365 ou Microsoft Intune),
+vous obtenez automatiquement Microsoft Entra ID avec un accès à toutes les fonctionnalités gratuites.
+
+
+Locataires Microsoft Entra
+Contrairement à AD DS, Microsoft Entra ID est multilocataire par conception.
+Il est implémenté spécifiquement pour assurer une isolation entre ses instances d’annuaire individuelles. Il s’agit du plus grand annuaire multilocataire au monde.
+
+
+e terme locataire représente généralement une entreprise ou une organisation qui a souscrit un abonnement à un service cloud Microsoft,
+par exemple Microsoft 365, Intune ou Azure, chacun tirant parti de Microsoft Entra ID.
+Toutefois, du point de vue technique, le terme « locataire » représente une instance Microsoft Entra individuelle. 
+Dans un abonnement Azure, vous pouvez créer plusieurs locataires Microsoft Entra. Le fait de disposer de plusieurs locataires Microsoft Entra
+peut être pratique si vous souhaitez tester les fonctionnalités de Microsoft Entra dans un locataire sans affecter les autres.
+
+À un moment donné, un abonnement Azure doit être associé à un et un seul locataire Microsoft Entra
