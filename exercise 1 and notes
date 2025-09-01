@@ -41,7 +41,7 @@ Contrairement à AD DS, Microsoft Entra ID est multilocataire par conception.
 Il est implémenté spécifiquement pour assurer une isolation entre ses instances d’annuaire individuelles. Il s’agit du plus grand annuaire multilocataire au monde.
 
 
-e terme locataire représente généralement une entreprise ou une organisation qui a souscrit un abonnement à un service cloud Microsoft,
+Le terme locataire représente généralement une entreprise ou une organisation qui a souscrit un abonnement à un service cloud Microsoft,
 par exemple Microsoft 365, Intune ou Azure, chacun tirant parti de Microsoft Entra ID.
 Toutefois, du point de vue technique, le terme « locataire » représente une instance Microsoft Entra individuelle. 
 Dans un abonnement Azure, vous pouvez créer plusieurs locataires Microsoft Entra. Le fait de disposer de plusieurs locataires Microsoft Entra
@@ -50,3 +50,95 @@ peut être pratique si vous souhaitez tester les fonctionnalités de Microsoft E
 À un moment donné, un abonnement Azure doit être associé à un et un seul locataire Microsoft Entra
 Cette association vous permet d’octroyer des autorisations aux ressources de l’abonnement Azure
 (par le biais du contrôle d’accès en fonction du rôle (RBAC)) pour les utilisateurs, les groupes et les applications qui se trouvent dans ce locataire Microsoft Entra particulier.
+
+********************************************************************************************************************************************************************
+
+
+Le schéma Microsoft Entra contient moins de types d’objets que celui d’AD DS. Plus particulièrement, il n’inclut pas de définition de la classe d’ordinateur,
+
+même s’il inclut la classe d’appareil. Le processus de jointure d’appareils à Microsoft Entra diffère considérablement du processus de jonction d’ordinateurs à AD DS.
+
+Le schéma Microsoft Entra est également facilement extensible et ses extensions sont entièrement réversibles.
+
+
+************************************************************************************************************************************************************
+
+L’absence de prise en charge de l’appartenance au domaine d’ordinateur traditionnel signifie que vous ne pouvez pas utiliser Microsoft Entra ID pour gérer les ordinateurs ou les paramètres utilisateur
+à l’aide de techniques de gestion traditionnelles, telles que les objets de stratégie de groupe (GPO). 
+
+
+Au lieu de cela, Microsoft Entra ID et ses services définissent un concept de gestion moderne.L’atout principal de Microsoft Entra ID réside dans la fourniture de services d’annuaire, 
+le stockage et la publication de données utilisateur, d’appareil et d’application,
+ainsi que la gestion de l’authentification et de l’autorisation des utilisateurs, des appareils et des applications. 
+
+L’efficacité et l’efficience de ces fonctionnalités sont apparentes en fonction des déploiements existants de services cloud tels que Microsoft 365, 
+qui s’appuient sur Microsoft Entra ID comme fournisseur d’identité et qui prennent en charge des millions d’utilisateurs.
+
+
+*********************************************************************************************************************************************************************
+
+Microsoft Entra ID n’inclut pas la classe d’unité d’organisation (UO). Cela signifie que vous ne pouvez pas organiser ses objets dans une hiérarchie de conteneurs personnalisés, 
+ce qui est fréquemment utilisé dans les déploiements AD DS locaux. Toutefois, il ne s’agit pas d’une lacune importante, 
+car les unités d’organisation dans AD DS sont principalement utilisées pour l’étendue de stratégie de groupe et la délégation. 
+
+Vous pouvez effectuer des arrangements équivalents en organisant les objets en fonction de leur appartenance à des groupes.
+
+
+Les objets des classes Application et servicePrincipal représentent des applications dans Microsoft Entra ID.
+
+Un objet de la classe Application contient une définition d’application et un objet dans la classe servicePrincipal constitue son instance dans le locataire Microsoft Entra actuel.
+La séparation de ces deux ensembles de caractéristiques vous permet de définir une application dans un locataire et de l’utiliser sur plusieurs locataires en créant un objet de principal de service
+pour cette application dans chaque locataire.
+
+Microsoft Entra ID crée l’objet de principal de service lorsque vous inscrivez l’application correspondante dans ce locataire Microsoft Entra.
+
+
+
+********************************************************************************************************************************************************************************
+azure arc - agent monitoring avec aws, WS2025 
+
+*********************************************************************************************************************************************************************************
+
+Daily management:
+Azure Portal 
+Azure Resource Manager
+Azure policy 
+Azure backup
+Bicep Templates 
+Cloud Shell 
+Cli 
+Azure PowerShell 
+
+
+
+
+Storage 
+Storage Explorer 
+Data  Box  - avec des NAS livrable physiquement 
+    +--------- Import/Export service - 
+AZCopy  (comme robocopy - (avec des checksums))
+Azure migrate - from on prem to cloud 
+
+****************************************************************************************
+*  App Services                                                                           *
+*  Application Insights                                                                   *
+*  (web site des visiteurs)                                                               *
+****************************************************************************************
+
+Networks 
+Network Watcher (PERMETS DE FAIRE NSLOOKUP, PING ETC)
+
+Virtual Machines 
+Azure continuity Center
+Bastion ---- 2 machined vm (hardened)-------- les ports dynamiques a se connecter --- vm pour le management 
+RDP
+SSH 
+
+********************************************************************************************
+*******************************************************************************************
+
+DRP - C'est inclu dans l'abonnement 
+
+
+
+
