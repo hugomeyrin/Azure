@@ -11,6 +11,9 @@ https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator/Instructi
 
 Resume 
 https://learn.microsoft.com/fr-fr/training/modules/understand-azure-active-directory/
+******************************************************************************************************************************************************
+
+
 
 Configuration de l’accès aux applications
 Configuration de l’authentification unique (SSO) pour les applications SaaS cloud
@@ -24,6 +27,8 @@ Extension des implémentations Active Directory locales existantes locales dans 
 Configuration d’un proxy d’application pour les applications cloud et locales
 Configuration de l’accès conditionnel pour les utilisateurs et les appareils
 
+
+************************************************************************************************************************************************************
 
 Microsoft Entra constitue un service Azure distinct. Sa forme la plus élémentaire, que tout nouvel abonnement Azure inclut automatiquement,
 n’entraîne aucun coût supplémentaire et est appelée « niveau Gratuit ».
@@ -43,3 +48,5 @@ Dans un abonnement Azure, vous pouvez créer plusieurs locataires Microsoft Entr
 peut être pratique si vous souhaitez tester les fonctionnalités de Microsoft Entra dans un locataire sans affecter les autres.
 
 À un moment donné, un abonnement Azure doit être associé à un et un seul locataire Microsoft Entra
+Cette association vous permet d’octroyer des autorisations aux ressources de l’abonnement Azure
+(par le biais du contrôle d’accès en fonction du rôle (RBAC)) pour les utilisateurs, les groupes et les applications qui se trouvent dans ce locataire Microsoft Entra particulier.
